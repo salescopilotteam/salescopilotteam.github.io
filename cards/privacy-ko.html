@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보처리방침 · 명함 코파일럿</title>
+  <meta name="description" content="명함 코파일럿 개인정보처리방침">
+  <style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #faf9f6;
+    --text: #18181b;
+    --muted: #64646e;
+    --line: #e5e2dc;
+    --tint: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 16px 64px;
+  }
+  main { margin: 0 auto; max-width: 720px; }
+  header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 32px 0 16px; }
+  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .intro { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; margin-top: 16px; }
+  nav a { color: var(--tint); text-decoration: none; }
+  nav a[aria-current] { color: var(--muted); font-weight: 600; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>개인정보처리방침</h1>
+      <p class="meta">명함 코파일럿 · 세일즈 코파일럿 팀</p>
+      <p class="meta">2026-09-16</p>
+      <nav>
+        <a href="index.html">홈</a>
+      <a href="privacy-ko.html" aria-current="page">개인정보처리방침</a>
+      <a href="terms-ko.html">이용약관</a>
+      <a href="help-ko.html">도움말</a>
+      </nav>
+      <nav>
+      <a href="privacy-ko.html" aria-current="page">한국어</a>
+      <a href="privacy-en.html">English</a>
+      <a href="privacy-ja.html">日本語</a>
+      </nav>
+    </header>
+
+    <div class="intro">
+      <p>명함 코파일럿(이하 &quot;앱&quot;)은 명함 정보를 사용자의 기기에만 보관하도록 만들어졌습니다. 이 방침은 앱이 실제로 어떤 정보를 어디에서 처리하는지 설명합니다.</p>
+    </div>
+
+      <h2>1. 운영자가 수집하는 개인정보</h2>
+      <p>운영자는 사용자와 명함에 담긴 개인정보를 수집하거나 서버에 저장하지 않습니다. 회원가입과 로그인이 없고, 광고·분석 SDK도 없습니다. 결제는 앱 마켓을 통해서만 이루어지며 운영자는 결제 정보를 받지 않습니다.</p>
+      <h2>2. 기기 안에 저장되는 정보</h2>
+      <p>명함 원본 사진, 이름·회사·직함·전화번호·이메일, 메모·라벨·만난 자리·반응·중요 표시, 후속 일정이 사용자의 기기 안 앱 전용 저장소에만 저장됩니다.</p>
+      <p>앱 사용 현황(예: 명함 저장 횟수)은 명함 내용과 연결되지 않는 이벤트 이름과 시각만 기기 안에 기록되며, 설정에서 확인하고 지울 수 있습니다. 외부로 전송하지 않습니다.</p>
+      <h2>3. 정보가 기기 밖으로 나가는 경우</h2>
+      <p>사용자가 직접 선택한 경우에만 정보가 기기 밖으로 전달됩니다. 명함 정보 공유, 사진 공유, CSV·vCard 내보내기, 백업 파일 저장, iCalendar 공유, 전화·문자·이메일·지도 열기, 캘린더에 일정 추가가 이에 해당합니다.</p>
+      <p>이때 받는 앱이나 서비스는 사용자가 운영체제 공유 화면에서 고르며, 전달된 뒤의 처리는 그 앱이나 서비스의 방침을 따릅니다.</p>
+      <h2>4. 글자 인식과 Google ML Kit</h2>
+      <p>명함 글자 인식은 기기에 포함된 Google ML Kit으로 처리합니다. 명함 이미지와 인식 결과를 OCR 서버에 업로드하지 않습니다.</p>
+      <p>다만 ML Kit은 모델과 호환성 갱신, 성능 및 사용량 지표를 위해 Google 서버에 접속할 수 있습니다. 이 통신에는 명함 이미지와 인식한 글자가 포함되지 않습니다.</p>
+      <h2>5. 접근 권한</h2>
+      <p>카메라: 명함을 촬영할 때 요청합니다.</p>
+      <p>사진: 앨범에서 명함 사진을 고를 때 요청합니다.</p>
+      <p>캘린더: iPhone에서 일정을 추가할 때 쓰기 권한만 요청합니다. Android에서는 캘린더 권한을 요청하지 않고 일정 파일 공유를 사용합니다.</p>
+      <p>연락처, 통화 기록, 마이크 권한은 요청하지 않습니다.</p>
+      <h2>6. 명함에 담긴 다른 사람의 정보</h2>
+      <p>명함은 대부분 다른 사람의 개인정보입니다. 받은 목적에 맞게 보관하고, 내보내거나 공유할 때는 받는 사람과 서비스를 확인해 주세요.</p>
+      <h2>7. 보관 기간과 파기</h2>
+      <p>정보는 사용자가 지울 때까지 기기 안에 남습니다. 명함 상세의 삭제는 해당 명함과 사진을, 설정의 모든 명함과 사진 삭제는 전체 데이터를 지웁니다. 앱을 삭제하면 앱 전용 저장소도 운영체제에 의해 함께 삭제됩니다.</p>
+      <p>운영자는 서버에 사본을 두지 않으므로, 기기에서 지운 정보를 복구해 드릴 수 없습니다.</p>
+      <h2>8. 이용자의 권리</h2>
+      <p>사용자는 앱 안에서 언제든 정보를 열람·수정·내보내기·삭제할 수 있습니다. 이 기능들은 유료로 바꾸지 않습니다.</p>
+      <h2>9. 방침의 변경</h2>
+      <p>로그인, 클라우드 백업처럼 정보 처리 방식이 바뀌는 기능을 추가하면 적용 전에 이 방침을 고치고 앱 안에서 알립니다.</p>
+      <h2>10. 문의처</h2>
+      <p>개인정보와 관련한 문의는 아래로 연락해 주세요.</p>
+      <p>운영자: 세일즈 코파일럿 팀</p>
+      <p>이메일: salescopilot.team@gmail.com</p>
+
+    <footer>명함 코파일럿 · 세일즈 코파일럿 팀 · salescopilot.team@gmail.com<br>이 문서는 앱 안의 같은 문서에서 생성되었습니다. 생성일 2026-09-19</footer>
+  </main>
+</body>
+</html>

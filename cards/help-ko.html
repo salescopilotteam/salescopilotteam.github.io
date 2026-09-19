@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>도움말 · 명함 코파일럿</title>
+  <meta name="description" content="명함 코파일럿 도움말">
+  <style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #faf9f6;
+    --text: #18181b;
+    --muted: #64646e;
+    --line: #e5e2dc;
+    --tint: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 16px 64px;
+  }
+  main { margin: 0 auto; max-width: 720px; }
+  header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 32px 0 16px; }
+  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .intro { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; margin-top: 16px; }
+  nav a { color: var(--tint); text-decoration: none; }
+  nav a[aria-current] { color: var(--muted); font-weight: 600; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>도움말</h1>
+      <p class="meta">명함 코파일럿 · 세일즈 코파일럿 팀</p>
+      
+      <nav>
+        <a href="index.html">홈</a>
+      <a href="privacy-ko.html">개인정보처리방침</a>
+      <a href="terms-ko.html">이용약관</a>
+      <a href="help-ko.html" aria-current="page">도움말</a>
+      </nav>
+      <nav>
+      <a href="help-ko.html" aria-current="page">한국어</a>
+      <a href="help-en.html">English</a>
+      <a href="help-ja.html">日本語</a>
+      </nav>
+    </header>
+
+    
+
+      <h2>명함 보관하기</h2>
+      <p>보관함 오른쪽 아래의 촬영 버튼을 누르면 카메라가 열립니다. 찍은 원본 사진은 자르지 않고 그대로 보관되고, 글자는 기기 안에서 읽어 이름·회사·직함·전화·이메일을 채웁니다.</p>
+      <p>이름을 몰라도 바로 저장됩니다. 사진만 보관된 명함은 나중에 눌러 정보를 채우면 됩니다.</p>
+      <p>앨범에 모아 둔 명함은 “앨범 선택” 또는 “여러 장”으로 한 번에 최대 15장까지 가져올 수 있습니다.</p>
+      <h2>찾기</h2>
+      <p>검색창에 이름, 회사, 직함, 전화, 이메일, 메모, 라벨, 만난 자리의 일부를 입력하면 바로 좁혀집니다.</p>
+      <p>라벨을 여러 개 고르면 모두 가진 명함만 남습니다. 조건을 고르면 결과에서 함께 쓰인 라벨과 만난 자리가 보이고, 누르면 조건에 더해집니다.</p>
+      <h2>라벨과 만난 자리</h2>
+      <p>라벨은 한 명함에 여러 개 붙일 수 있고, 만난 자리는 한 명함에 하나만 붙습니다. 편집 화면에서 기존 값을 추천받아 누르면 붙습니다.</p>
+      <p>보관함 위의 “필터”를 누르면 라벨과 만난 자리 전체가 시트로 열립니다. 줄 끝의 “+”로 새 값을 만들고, 붙일 명함을 검색해 한꺼번에 고를 수 있습니다.</p>
+      <h2>길게 눌러 편집하기</h2>
+      <p>라벨이나 만난 자리 칩을 길게 누르면 메뉴가 열립니다. 명함 선택·편집, 색상(라벨만), 이름 변경, 삭제를 할 수 있습니다.</p>
+      <p>이름 변경과 삭제는 그 값이 붙은 모든 명함에 적용됩니다. 삭제해도 명함은 지워지지 않습니다.</p>
+      <h2>중요한 사람과 라벨 색상</h2>
+      <p>명함 상세의 이름 옆 “중요”를 켜면 보관함 맨 위에 별과 함께 보이고, 필터의 “중요”로 모아 볼 수 있습니다.</p>
+      <p>라벨 색상은 6가지 중에서 고르며, 색이 없는 라벨은 기본 모양으로 보입니다.</p>
+      <h2>연락과 일정</h2>
+      <p>상세에서 전화·문자·이메일을 누르면 번호나 주소가 채워진 기기 앱이 열립니다. 앱이 대신 보내지 않습니다.</p>
+      <p>“캘린더에 추가”와 “iCalendar 공유”로 후속 약속을 만들 수 있고, 저장 전에 직접 확인합니다.</p>
+      <h2>등록 한도</h2>
+      <p>무료로는 명함을 30장까지 등록할 수 있습니다. 지금까지 등록한 횟수를 세므로, 명함을 지워도 자리가 다시 생기지는 않습니다.</p>
+      <p>한도에 닿아도 이미 저장한 명함은 그대로 보고, 찾고, 고치고, 내보내고, 지울 수 있습니다. 새로 등록하는 것만 멈춥니다.</p>
+      <h2>내보내기와 삭제</h2>
+      <p>설정에서 CSV나 vCard로 내보낼 수 있습니다. 사진과 반응 이모지는 파일에 들어가지 않습니다.</p>
+      <p>설정의 “모든 명함과 사진 삭제”는 되돌릴 수 없으니 먼저 내보내 두세요.</p>
+      <h2>데이터는 어디에 있나요</h2>
+      <p>명함 사진과 입력한 정보는 이 기기에만 저장됩니다. 앱을 삭제하거나 기기를 초기화하면 함께 지워지므로, 기기를 바꾸기 전에는 백업이나 내보내기를 해 두세요.</p>
+
+    <footer>명함 코파일럿 · 세일즈 코파일럿 팀 · salescopilot.team@gmail.com<br>이 문서는 앱 안의 같은 문서에서 생성되었습니다. 생성일 2026-09-19</footer>
+  </main>
+</body>
+</html>

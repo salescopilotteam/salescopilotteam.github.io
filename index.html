@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>세일즈 코파일럿</title>
+  <meta name="description" content="영업 현장에서 쓰는 모바일 도구 묶음. 받은 명함을 기기 안에만 보관합니다.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --surface: #faf9f6;
+      --text: #18181b;
+      --muted: #64646e;
+      --line: #e5e2dc;
+      --tint: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0 16px 64px;
+    }
+    main { margin: 0 auto; max-width: 720px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 48px 0 24px; }
+    h1 { font-size: 30px; line-height: 1.3; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 32px 0 4px; }
+    p { margin: 0 0 12px; }
+    .meta { color: var(--muted); font-size: 14px; margin: 0 0 4px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 16px; padding: 20px; }
+    .card h2 { margin-top: 0; }
+    .soon { color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; }
+    nav a { color: var(--tint); text-decoration: none; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>세일즈 코파일럿</h1>
+      <p class="meta">영업 현장에서 쓰는 모바일 도구 묶음입니다.</p>
+      <p class="meta">세일즈 코파일럿 팀 · salescopilot.team@gmail.com</p>
+    </header>
+
+    <div class="card">
+      <h2>명함 코파일럿</h2>
+      <p>받은 명함을 촬영해 보관하고, 라벨과 만난 자리로 정리해 다시 찾는 앱입니다. 명함과 사진은 기기 안에만 저장되며, 계정도 자동 업로드도 없습니다.</p>
+      <nav>
+        <a href="cards/privacy-ko.html">개인정보처리방침</a>
+        <a href="cards/terms-ko.html">이용약관</a>
+        <a href="cards/help-ko.html">도움말</a>
+        <a href="cards/index.html">English / 日本語</a>
+      </nav>
+    </div>
+
+    <div class="card">
+      <h2 class="soon">영수증 코파일럿</h2>
+      <p class="soon">영업 활동비 영수증을 촬영해 정리하는 앱입니다. 준비 중입니다.</p>
+    </div>
+
+    <footer>
+      세일즈 코파일럿 팀 · salescopilot.team@gmail.com<br>
+      각 앱의 문서는 앱 안에서 보이는 문면과 같은 원본에서 생성됩니다.
+    </footer>
+  </main>
+</body>
+</html>
