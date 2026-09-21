@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>알려진 문제와 변경 내역 · 명함 코파일럿</title>
+  <meta name="description" content="명함 코파일럿의 알려진 문제와 변경 내역">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --surface: #faf9f6;
+      --text: #18181b;
+      --muted: #64646e;
+      --line: #e5e2dc;
+      --tint: #2563eb;
+      --done: #15803d;
+      --open: #b45309;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; --done: #4ade80; --open: #fbbf24; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0 16px 64px;
+    }
+    main { margin: 0 auto; max-width: 720px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 32px 0 16px; }
+    h1 { font-size: 28px; line-height: 1.3; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 32px 0 8px; }
+    h3 { font-size: 15px; margin: 20px 0 4px; }
+    p { margin: 0 0 12px; }
+    .meta { color: var(--muted); font-size: 14px; margin: 0; }
+    .intro { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; margin-top: 16px; }
+    nav a { color: var(--tint); text-decoration: none; }
+    .item { border-bottom: 1px solid var(--line); padding: 16px 0; }
+    .item:last-child { border-bottom: 0; }
+    .tag { border-radius: 999px; display: inline-block; font-size: 12px; font-weight: 600; margin-right: 8px; padding: 2px 10px; }
+    .tag.open { background: color-mix(in srgb, var(--open) 15%, transparent); color: var(--open); }
+    .tag.done { background: color-mix(in srgb, var(--done) 15%, transparent); color: var(--done); }
+    .when { color: var(--muted); font-size: 13px; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>알려진 문제와 변경 내역</h1>
+      <p class="meta">명함 코파일럿 · 세일즈 코파일럿 팀</p>
+      <nav>
+        <a href="../index.html">홈</a>
+        <a href="privacy-ko.html">개인정보처리방침</a>
+        <a href="terms-ko.html">이용약관</a>
+        <a href="help-ko.html">도움말</a>
+      </nav>
+    </header>
+
+    <div class="intro">
+      <p>보내 주신 의견이 어떻게 처리되었는지 이 페이지에 적습니다. 같은 문제를 여러 번 알려 주시지 않아도
+        되도록, 저희가 이미 알고 있는 것을 먼저 공개합니다.</p>
+      <p>문제나 제안은 앱 안에서 보내실 수 있습니다. 설정 > 문제 신고, 설정 > 기능 제안입니다.
+        받은 의견에는 메일로 답장드립니다.</p>
+    </div>
+
+    <h2>알려진 문제</h2>
+
+    <div class="item">
+      <h3><span class="tag done">해결</span>이름 대신 부서명이 들어가는 경우</h3>
+      <p>이름이 직함 줄 위에 따로 있는 명함에서, 이름 칸에 부서명이 들어가는 문제가 있었습니다.
+        예를 들어 <code>홍길동</code> 아래에 <code>영업팀 팀장</code>이 있으면 이름이 "영업팀"으로
+        저장되었습니다. 회사, 직함, 전화번호, 이메일은 정상이었습니다.</p>
+      <p class="when">2026-09-21 확인 · 2026-09-22 수정</p>
+    </div>
+
+    <div class="item">
+      <h3><span class="tag open">확인 중</span>결제 기능 준비 중</h3>
+      <p>등록 한도 화면의 결제 버튼을 누르면 "준비 중"이라고만 표시됩니다. 앱 마켓 상품 등록이
+        끝나면 연결됩니다. 비공개 테스트 기간에 앱을 처음 여신 분은 한도 없이 계속 사용하실 수
+        있습니다.</p>
+      <p class="when">2026-09-22 기준</p>
+    </div>
+
+    <h2>변경 내역</h2>
+
+    <div class="item">
+      <h3>2026-09-22</h3>
+      <p>문의하기를 문제 신고와 기능 제안으로 나누었습니다. 무엇을 적어야 할지 칸을 나누어
+        안내합니다.</p>
+      <p>명함이 20장을 넘고 백업이 없으면 한 번만 백업을 권합니다. 거절하시면 다시 묻지 않습니다.</p>
+      <p>이름 대신 부서명이 들어가던 문제를 고쳤습니다.</p>
+    </div>
+
+    <div class="item">
+      <h3>2026-09-20</h3>
+      <p>화면이 예기치 않게 멈췄을 때 빈 화면 대신 안내를 보여 주고, 원하시면 오류 내용을 메일로
+        보내실 수 있게 했습니다. 자동으로 전송되는 것은 없습니다.</p>
+      <p>기기를 바꾸셨을 때를 위한 구매 복원 항목을 설정에 넣었습니다.</p>
+    </div>
+
+    <div class="item">
+      <h3>2026-09-19</h3>
+      <p>화면 언어를 한국어, 영어, 일본어 중에서 고를 수 있게 했습니다. 기본은 기기 언어를 따릅니다.</p>
+      <p>보관함의 필터를 시트로 옮기고, 켜 둔 조건만 한 줄로 보여 주도록 정리했습니다.</p>
+    </div>
+
+    <footer>
+      명함 코파일럿 · 세일즈 코파일럿 팀 · salescopilot.team@gmail.com<br>
+      이 페이지는 읽기 전용입니다. 의견은 앱 안의 문제 신고와 기능 제안으로 보내 주세요.
+    </footer>
+  </main>
+</body>
+</html>
