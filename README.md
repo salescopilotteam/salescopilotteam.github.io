@@ -5,7 +5,7 @@
 
 ```
 /                 시리즈 소개
-/cards/           명함 코파일럿 (com.salescopilot.cards)
+/cards/           CardKeep (com.salescopilot.cards)
 ```
 
 - 개인정보처리방침: [cards/privacy-ko.html](cards/privacy-ko.html) · [English](cards/privacy-en.html) · [日本語](cards/privacy-ja.html)
