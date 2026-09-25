@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー (個人情報保護方針) · ホショチョ (보증서 코파일럿 / Warranty Copilot)</title>
+  <meta name="description" content="ホショチョ (보증서 코파일럿 / Warranty Copilot) プライバシーポリシー (個人情報保護方針)">
+  <style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #faf9f6;
+    --text: #18181b;
+    --muted: #64646e;
+    --line: #e5e2dc;
+    --tint: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 16px 64px;
+  }
+  main { margin: 0 auto; max-width: 720px; }
+  header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 32px 0 16px; }
+  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .intro { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; margin-top: 16px; }
+  nav a { color: var(--tint); text-decoration: none; }
+  nav a[aria-current] { color: var(--muted); font-weight: 600; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="meta">ホショチョ (보증서 코파일럿 / Warranty Copilot)</p>
+      <h1>プライバシーポリシー (個人情報保護方針)</h1>
+      <p class="meta">2026年9月21日 改定</p>
+      <nav aria-label="Documents">
+      <a href="privacy-ja.html" aria-current="page">プライバシーポリシー</a>
+      <a href="terms-ja.html">利用規約</a>
+      <a href="tokushoho-ja.html">特定商取引法に基づく表記</a>
+      </nav>
+      <nav aria-label="Languages">
+      <a href="privacy-ja.html" aria-current="page">日本語</a>
+      <a href="privacy-ko.html">한국어</a>
+      <a href="privacy-en.html">English</a>
+      </nav>
+    </header>
+    <article>
+      <h2>1. 完全ローカル完結型（ゼロサーバー）アーキテクチャ</h2>
+      <p>ホショチョ（以下「当アプリ」）は、ユーザーのプライバシーを最優先に設計されています。撮影された保証書やレシートの画像、製品名、型番、購入日、店舗名、メモ、およびレシート上に印字された購入者情報（氏名や決済情報の一部等）は、すべてお使いの端末内部（ローカルストレージおよびSQLiteデータベース）にのみ保存されます。開発者を含むいかなる外部サーバーにも送信・蓄積されることは一切ありません。</p>
+      <h2>2. カメラおよび写真ライブラリの利用目的</h2>
+      <p>当アプリが要求するカメラおよび写真へのアクセス権限は、保証書・レシートの撮影およびOCR（文字認識）による自動入力機能のためだけに使用されます。OCR処理はすべて端末内（オンデバイス）で完結し、画像が外部のクラウドAI等にアップロードされることはありません。</p>
+      <h2>3. 広告と選択権</h2>
+      <p>韓国 Google Play ストアで提供する広告型無料版では、Google Mobile Ads によるバナー広告を表示する場合があります。広告配信にあたり、端末識別子、IPアドレス、広告操作情報が Google のプライバシーポリシーに基づいて処理されることがあります。EEA・英国・スイス等、同意が必要な地域では広告リクエスト前に Google の同意画面を表示し、同意できない場合は広告をリクエストしません。保証書・レシートの画像およびアプリ内の保証データは広告目的で共有しません。</p>
+      <h2>4. 暗号化バックアップとデータの自己管理</h2>
+      <p>ユーザーがバックアップ機能を利用する場合、データはユーザーが指定したパスフレーズを用いて軍用規格であるAES-256-GCM方式で強固に暗号化された上でファイルとして書き出されます。このパスフレーズは端末内に保存されないため、パスフレーズを知るユーザー本人以外がデータを復号することは技術的に不可能です。</p>
+      <h2>5. データの削除権利（個人情報保護法への準拠）</h2>
+      <p>アプリ内で保証書データを削除すると、該当のレコードおよび関連画像ファイルは端末ストレージから即時に完全削除されます。アプリをアンインストールした場合も、端末内のすべてのデータが完全に消去されます。</p>
+      <h2>6. お問い合わせ窓口</h2>
+      <p>個人情報の取り扱いに関するご質問・お問い合わせは下記窓口までご連絡ください。</p>
+      <p>運営責任: Sales Copilot Team (セールスコパイロットチーム)</p>
+      <p>連絡先: salescopilot.team@gmail.com</p>
+    </article>
+    <footer>
+      ホショチョ (보증서 코파일럿 / Warranty Copilot) · Sales Copilot Team (セールスコパイロットチーム) · salescopilot.team@gmail.com<br>この文書はアプリ内の同じ文面から生成されています。生成日 2026-09-25
+    </footer>
+  </main>
+</body>
+</html>
