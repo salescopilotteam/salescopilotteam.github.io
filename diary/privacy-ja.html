@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー · よっつのかけら</title>
+  <meta name="description" content="よっつのかけら プライバシーポリシー">
+  <style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #faf9f6;
+    --text: #18181b;
+    --muted: #64646e;
+    --line: #e5e2dc;
+    --tint: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 16px 64px;
+  }
+  main { margin: 0 auto; max-width: 720px; }
+  header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 32px 0 16px; }
+  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin: 0 0 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 12px; font-size: 15px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; margin-top: 16px; }
+  nav a { color: var(--tint); text-decoration: none; }
+  nav a[aria-current] { color: var(--muted); font-weight: 600; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">よっつのかけら · セールスコパイロットチーム</p>
+      <p class="meta">2026-09-30</p>
+      <nav>
+        <a href="index.html">ホーム</a>
+      </nav>
+      <nav>
+      <a href="privacy-ko.html">한국어</a>
+      <a href="privacy-en.html">English</a>
+      <a href="privacy-ja.html" aria-current="page">日本語</a>
+      </nav>
+    </header>
+
+<h2>1. 概要</h2>
+<p>よっつのかけら（以下「本アプリ」）は、利用者の個人情報を<strong>収集しません。</strong></p>
+<p>会員登録、ログイン、アカウント作成の手続きはなく、開発者は利用者が本アプリに残した内容を</p>
+<p>一切閲覧できません。</p>
+<h2>2. 保存される情報と保存場所</h2>
+<p>利用者が入力した文章、気持ち、絵、写真、音声録音は、</p>
+<p><strong>利用者の端末内にあるアプリ専用の保存領域にのみ</strong>保存されます。</p>
+<ul>
+<li>日記本文と気持ちの記録は、AES-256で暗号化されたデータベースファイルに保存されます</li>
+<li>暗号化の鍵は当該端末のセキュリティ領域（Android Keystore）に保管され、端末外へ出ることはありません</li>
+<li>写真と音声ファイルはアプリ専用の保存領域に保存されます</li>
+<li>これらの情報は、開発者のサーバーを含むいかなる外部サーバーにも送信されません</li>
+</ul>
+<h2>3. ネットワークの利用</h2>
+<p><strong>本アプリはインターネットに接続しません。</strong> インターネット権限も要求しません。</p>
+<p>機内モードでもすべての機能が同じように動作します。</p>
+<h2>4. 権限</h2>
+<table>
+<tr><th>権限</th><th>利用目的</th></tr>
+<tr><td>写真およびメディアへのアクセス</td><td>利用者が選んだ写真を日記に添付するため</td></tr>
+<tr><td>カメラ</td><td>利用者がアプリ内で写真を撮影するため</td></tr>
+<tr><td>マイク</td><td>利用者が音声メモを録音するため</td></tr>
+<tr><td>生体認証</td><td>アプリロックの解除および暗号化鍵へのアクセス確認のため</td></tr>
+</table>
+<p>すべての権限は該当機能の利用時にのみ求められ、拒否しても他の機能は正常に動作します。</p>
+<p>生体情報自体はOSが処理し、本アプリは認証の成否のみを受け取ります。</p>
+<h2>5. 第三者提供および広告</h2>
+<p>開発者はいかなる情報も第三者に提供しません。</p>
+<p>本アプリには広告、分析ツール、クラッシュレポートツールは含まれていません。</p>
+<h2>6. データの削除</h2>
+<p>本アプリを削除すると、端末に保存されたすべての記録と暗号化鍵が同時に削除されます。</p>
+<p>開発者が保管しているデータはないため、別途の削除請求手続きは不要です。</p>
+<p>利用者自身が作成したバックアップファイルは指定した場所に残るため、必要に応じてご自身で削除してください。</p>
+<h2>7. 児童の個人情報</h2>
+<p>本アプリは個人情報を収集しないため、児童を含むすべての年齢層が安全にご利用いただけます。</p>
+<h2>8. 本方針の変更</h2>
+<p>本方針を変更する場合は、アプリの更新に合わせて本書を改訂し、施行日を明示します。</p>
+<h2>9. お問い合わせ</h2>
+<p>salescopilot.team@gmail.com</p>
+
+    <footer>よっつのかけら · セールスコパイロットチーム · salescopilot.team@gmail.com</footer>
+  </main>
+</body>
+</html>
