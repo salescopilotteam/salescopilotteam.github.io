@@ -1,71 +1,170 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Four Pieces</title>
-  <meta name="description" content="글, 그림, 사진, 목소리로 하루를 남기는 일기 앱. 기록은 기기 안에만 있습니다.">
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 · 하루조각 / よっつのかけら / Four Pieces</title>
+<style>
   :root {
-    color-scheme: light dark;
-    --bg: #ffffff;
-    --surface: #faf9f6;
-    --text: #18181b;
-    --muted: #64646e;
-    --line: #e5e2dc;
-    --tint: #2563eb;
+    --bg: #FBF7F0; --surface: #FFFFFF; --border: #E4DACB;
+    --text: #2C2622; --muted: #8A7F72; --accent: #C4663C;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #131316; --surface: #1b1b1f; --text: #f4f4f5; --muted: #a1a1aa; --line: #2b2b31; --tint: #93b4fd; }
+    :root:not([data-theme="light"]) {
+      --bg: #171513; --surface: #221F1C; --border: #3A3430;
+      --text: #F0E9E0; --muted: #9C9188; --accent: #E08A5C;
+    }
   }
   * { box-sizing: border-box; }
   body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", sans-serif;
-    line-height: 1.7;
-    margin: 0;
-    padding: 0 16px 64px;
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+    line-height: 1.75; -webkit-text-size-adjust: 100%;
   }
-  main { margin: 0 auto; max-width: 720px; }
-  header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding: 32px 0 16px; }
-  h1 { font-size: 28px; line-height: 1.3; margin: 0 0 8px; }
-  h2 { font-size: 18px; margin: 32px 0 8px; }
-  p { margin: 0 0 12px; }
-  ul { margin: 0 0 12px; padding-left: 20px; }
-  li { margin: 0 0 4px; }
-  table { border-collapse: collapse; width: 100%; margin: 0 0 12px; font-size: 15px; }
-  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  main { max-width: 46rem; margin: 0 auto; padding: 3rem 16px 6rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin: 3rem 0 .5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+  h3 { font-size: 1rem; margin: 2rem 0 .5rem; }
+  p { margin: .6rem 0; }
+  .lede { color: var(--muted); margin-bottom: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--border); padding: .5rem .7rem; text-align: left; vertical-align: top; }
   th { background: var(--surface); font-weight: 600; }
-  .meta { color: var(--muted); font-size: 14px; margin: 0; }
-  nav { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; margin-top: 16px; }
-  nav a { color: var(--tint); text-decoration: none; }
-  nav a[aria-current] { color: var(--muted); font-weight: 600; }
-  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
+  code { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 0 .3em; font-size: .9em; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
 </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Four Pieces</h1>
-      <p class="meta">세일즈 코파일럿 팀 · salescopilot.team@gmail.com</p>
-      <p class="meta">글, 그림, 사진, 목소리로 하루를 남기는 일기 앱입니다. 기록은 기기 안에만 있고 인터넷 권한을 요청하지 않습니다.</p>
-    </header>
-
-      <h2>한국어 — 하루조각</h2>
-      <nav>
-      <a href="privacy-ko.html">개인정보처리방침</a>
-      </nav>
-      <h2>English — Four Pieces</h2>
-      <nav>
-      <a href="privacy-en.html">Privacy policy</a>
-      </nav>
-      <h2>日本語 — よっつのかけら</h2>
-      <nav>
-      <a href="privacy-ja.html">プライバシーポリシー</a>
-      </nav>
-
-    <footer>Four Pieces · 세일즈 코파일럿 팀 · salescopilot.team@gmail.com<br>이 문서는 앱 안의 같은 원본에서 생성되었습니다. 시행일 2026-09-30</footer>
-  </main>
+<main>
+  <h1>개인정보 처리방침</h1>
+  <p class="lede">하루조각 / よっつのかけら / Four Pieces &middot; com.salescopilot.harujogak</p>
+<h2>한국어</h2>
+<h3>1. 개요</h3>
+<p>하루조각(이하 &quot;앱&quot;)은 사용자의 개인정보를 <strong>수집하지 않습니다.</strong></p>
+<p>회원가입, 로그인, 계정 생성 절차가 없으며, 개발자는 사용자가 앱에 남긴 어떤 내용도 볼 수 없습니다.</p>
+<h3>2. 저장되는 정보와 위치</h3>
+<p>사용자가 앱에 입력한 글, 감정, 그림, 사진, 음성 녹음은</p>
+<p><strong>사용자 기기 내부의 앱 전용 저장 영역에만</strong> 저장됩니다.</p>
+<ul>
+<li>일기 본문과 감정 기록은 AES-256으로 암호화된 데이터베이스 파일에 저장됩니다</li>
+<li>암호화 열쇠는 해당 기기의 보안 영역(Android Keystore)에 보관되며 기기 밖으로 나가지 않습니다</li>
+<li>사진과 음성 파일은 앱 전용 저장 영역에 저장됩니다</li>
+<li>위 정보는 개발자의 서버를 포함한 어떠한 외부 서버로도 전송되지 않습니다</li>
+</ul>
+<h3>3. 네트워크 사용</h3>
+<p><strong>이 앱은 인터넷에 접속하지 않습니다.</strong> 인터넷 권한을 요청하지도 않습니다.</p>
+<p>비행기 모드에서도 모든 기능이 동일하게 동작합니다.</p>
+<h3>4. 권한</h3>
+<table>
+<tr><th>권한</th><th>사용 목적</th></tr>
+<tr><td>사진 및 미디어 접근</td><td>사용자가 선택한 사진을 일기에 첨부하기 위해</td></tr>
+<tr><td>카메라</td><td>사용자가 앱에서 직접 사진을 촬영하기 위해</td></tr>
+<tr><td>마이크</td><td>사용자가 음성 메모를 녹음하기 위해</td></tr>
+<tr><td>생체 인증</td><td>앱 잠금 해제 및 암호화 열쇠 접근 확인을 위해</td></tr>
+</table>
+<p>모든 권한은 해당 기능을 사용할 때만 요청되며, 거부해도 나머지 기능은 정상 동작합니다.</p>
+<p>생체 정보 자체는 운영체제가 처리하며 앱은 인증 성공 여부만 전달받습니다.</p>
+<h3>5. 제3자 제공 및 광고</h3>
+<p>개발자는 어떤 정보도 제3자에게 제공하지 않습니다.</p>
+<p>앱에는 광고, 분석 도구(Analytics), 크래시 리포팅 도구가 포함되어 있지 않습니다.</p>
+<h3>6. 데이터 삭제</h3>
+<p>앱을 삭제하면 기기에 저장된 모든 기록과 암호화 열쇠가 함께 삭제됩니다.</p>
+<p>개발자가 보관하는 데이터가 없으므로 별도의 삭제 요청 절차는 필요하지 않습니다.</p>
+<p>사용자가 직접 만든 백업 파일은 사용자가 지정한 위치에 남으므로, 필요 시 직접 삭제해야 합니다.</p>
+<h3>7. 아동의 개인정보</h3>
+<p>이 앱은 개인정보를 수집하지 않으므로 아동을 포함한 모든 연령대에서 안전하게 사용할 수 있습니다.</p>
+<h3>8. 방침 변경</h3>
+<p>이 방침이 변경되는 경우 앱 업데이트와 함께 이 문서를 갱신하고 시행일을 표시합니다.</p>
+<h3>9. 문의</h3>
+<p>salescopilot.team@gmail.com</p>
+<hr>
+<h2>日本語</h2>
+<h3>1. 概要</h3>
+<p>よっつのかけら（以下「本アプリ」）は、利用者の個人情報を<strong>収集しません。</strong></p>
+<p>会員登録、ログイン、アカウント作成の手続きはなく、開発者は利用者が本アプリに残した内容を</p>
+<p>一切閲覧できません。</p>
+<h3>2. 保存される情報と保存場所</h3>
+<p>利用者が入力した文章、気持ち、絵、写真、音声録音は、</p>
+<p><strong>利用者の端末内にあるアプリ専用の保存領域にのみ</strong>保存されます。</p>
+<ul>
+<li>日記本文と気持ちの記録は、AES-256で暗号化されたデータベースファイルに保存されます</li>
+<li>暗号化の鍵は当該端末のセキュリティ領域（Android Keystore）に保管され、端末外へ出ることはありません</li>
+<li>写真と音声ファイルはアプリ専用の保存領域に保存されます</li>
+<li>これらの情報は、開発者のサーバーを含むいかなる外部サーバーにも送信されません</li>
+</ul>
+<h3>3. ネットワークの利用</h3>
+<p><strong>本アプリはインターネットに接続しません。</strong> インターネット権限も要求しません。</p>
+<p>機内モードでもすべての機能が同じように動作します。</p>
+<h3>4. 権限</h3>
+<table>
+<tr><th>権限</th><th>利用目的</th></tr>
+<tr><td>写真およびメディアへのアクセス</td><td>利用者が選んだ写真を日記に添付するため</td></tr>
+<tr><td>カメラ</td><td>利用者がアプリ内で写真を撮影するため</td></tr>
+<tr><td>マイク</td><td>利用者が音声メモを録音するため</td></tr>
+<tr><td>生体認証</td><td>アプリロックの解除および暗号化鍵へのアクセス確認のため</td></tr>
+</table>
+<p>すべての権限は該当機能の利用時にのみ求められ、拒否しても他の機能は正常に動作します。</p>
+<p>生体情報自体はOSが処理し、本アプリは認証の成否のみを受け取ります。</p>
+<h3>5. 第三者提供および広告</h3>
+<p>開発者はいかなる情報も第三者に提供しません。</p>
+<p>本アプリには広告、分析ツール、クラッシュレポートツールは含まれていません。</p>
+<h3>6. データの削除</h3>
+<p>本アプリを削除すると、端末に保存されたすべての記録と暗号化鍵が同時に削除されます。</p>
+<p>開発者が保管しているデータはないため、別途の削除請求手続きは不要です。</p>
+<p>利用者自身が作成したバックアップファイルは指定した場所に残るため、必要に応じてご自身で削除してください。</p>
+<h3>7. 児童の個人情報</h3>
+<p>本アプリは個人情報を収集しないため、児童を含むすべての年齢層が安全にご利用いただけます。</p>
+<h3>8. 本方針の変更</h3>
+<p>本方針を変更する場合は、アプリの更新に合わせて本書を改訂し、施行日を明示します。</p>
+<h3>9. お問い合わせ</h3>
+<p>salescopilot.team@gmail.com</p>
+<hr>
+<h2>English</h2>
+<h3>1. Overview</h3>
+<p>Four Pieces (the &quot;App&quot;) <strong>does not collect any personal information.</strong></p>
+<p>There is no sign-up, login, or account creation, and the developer cannot see anything</p>
+<p>you write in the App.</p>
+<h3>2. What is stored, and where</h3>
+<p>The text, moods, drawings, photos and voice recordings you enter are stored</p>
+<p><strong>only in app-private storage on your own device.</strong></p>
+<ul>
+<li>Diary text and mood records are stored in a database file encrypted with AES-256</li>
+<li>The encryption key is held in that device&#x27;s secure storage (Android Keystore) and never leaves it</li>
+<li>Photos and audio files are stored in app-private storage</li>
+<li>None of this is transmitted to any external server, including the developer&#x27;s</li>
+</ul>
+<h3>3. Network use</h3>
+<p><strong>The App never connects to the internet.</strong> It does not even request the internet permission.</p>
+<p>Every feature works identically in airplane mode.</p>
+<h3>4. Permissions</h3>
+<table>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>Photos and media</td><td>To attach photos you select to your diary</td></tr>
+<tr><td>Camera</td><td>To take photos from within the App</td></tr>
+<tr><td>Microphone</td><td>To record voice notes</td></tr>
+<tr><td>Biometrics</td><td>To unlock the App and to confirm access to the encryption key</td></tr>
+</table>
+<p>Each permission is requested only when you use the related feature, and declining it leaves</p>
+<p>the rest of the App working normally. Biometric data itself is handled by the operating system;</p>
+<p>the App receives only whether authentication succeeded.</p>
+<h3>5. Third parties and advertising</h3>
+<p>The developer shares no information with third parties.</p>
+<p>The App contains no advertising, analytics, or crash reporting tools.</p>
+<h3>6. Deleting your data</h3>
+<p>Uninstalling the App deletes all records stored on the device along with the encryption key.</p>
+<p>Because the developer holds no data, there is no separate deletion request process.</p>
+<p>Backup files you created yourself remain wherever you saved them; delete those yourself if needed.</p>
+<h3>7. Children&#x27;s privacy</h3>
+<p>The App collects no personal information and is safe for users of all ages, including children.</p>
+<h3>8. Changes to this policy</h3>
+<p>If this policy changes, this document will be updated alongside an App update and the</p>
+<p>effective date will be revised.</p>
+<h3>9. Contact</h3>
+<p>salescopilot.team@gmail.com</p>
+</main>
 </body>
 </html>
