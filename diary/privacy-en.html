@@ -71,7 +71,8 @@
 <li>Diary text and mood records are stored in a database file encrypted with AES-256</li>
 <li>The encryption key is held in that device&#x27;s secure storage (Android Keystore) and never leaves it</li>
 <li>Photos and audio files are stored in app-private storage</li>
-<li>None of this is transmitted to any external server, including the developer&#x27;s</li>
+<li>None of this is sent to or stored on external servers operated by the developer</li>
+<li>Depending on device backup settings, the operating system provider may include app data in its backup service</li>
 </ul>
 <h2>3. Network use</h2>
 <p><strong>The App never connects to the internet.</strong> It does not even request the internet permission.</p>
